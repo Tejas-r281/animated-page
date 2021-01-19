@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: url('/814007_super-mario-backgrounds_1920x1200_h.webp');
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+    /* background-repeat: repeat-x; */
+   display: block;
+   
+    /* animation: backgrounds 20s linear infinite; */
+}
+.imag{
+   
+    position: absolute;
+    bottom:16%;
+    left: 0%;
+    animation: runing 6s linear infinite;
+    
+    
+    /* background-color: red; */
+}
+.mario{
+    position: absolute;
+   
+}
+.name{
+    color: white;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 50%;
+    bottom:80%;
+    animation: name 3s linear infinite forwards;
+}
+
+@keyframes  runing {
+    0%{
+        left: 10%;
+    }
+    100%{
+        left: 70%;
+        /* right: ; */
+    }
+}
+
+@keyframes backgrounds{
+  
+    100%{
+         transform: translateX(-3400px);
+    }
+}
+@keyframes name {
+    100%{
+        /* color: red; */
+        /* font-size: 4.5em; */
+        left: 40%;
+        transform: scale(4) ;
+    }
+}
